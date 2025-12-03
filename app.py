@@ -235,11 +235,16 @@ st.markdown("""
     [data-testid="stHeader"] {
         background-color: rgba(0,0,0,0.9);
     }
-    /* 核彈級 CSS：強制 Header 內所有元素變白 */
-    [data-testid="stHeader"] * {
-        color: #ffffff !important;
-        fill: #ffffff !important;
-        stroke: #ffffff !important;
+    
+    /* 修正：讓 Header 內的按鈕和連結文字變白 */
+    [data-testid="stHeader"] button, 
+    [data-testid="stHeader"] a {
+        color: white !important;
+    }
+    
+    /* 修正：讓 SVG 圖示顏色跟隨文字 (解決灰色問題，避免變成方塊) */
+    [data-testid="stHeader"] svg {
+        fill: currentColor !important;
     }
     
     /* Text Area 樣式優化 */
