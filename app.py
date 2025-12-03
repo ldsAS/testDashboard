@@ -234,13 +234,17 @@ st.markdown("""
     }
     [data-testid="stHeader"] {
         background-color: rgba(0,0,0,0.9);
+        color: white !important;
+    }
+    [data-testid="stHeader"] > * {
+        color: white !important;
     }
     [data-testid="stHeader"] button {
         color: white !important;
     }
     [data-testid="stHeader"] svg {
         fill: white !important;
-        stroke: white !important;
+        color: white !important;
     }
     
     /* Text Area 樣式優化 */
