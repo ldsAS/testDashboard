@@ -234,17 +234,12 @@ st.markdown("""
     }
     [data-testid="stHeader"] {
         background-color: rgba(0,0,0,0.9);
-        color: white !important;
     }
-    [data-testid="stHeader"] > * {
-        color: white !important;
-    }
-    [data-testid="stHeader"] button {
-        color: white !important;
-    }
-    [data-testid="stHeader"] svg {
-        fill: white !important;
-        color: white !important;
+    /* 核彈級 CSS：強制 Header 內所有元素變白 */
+    [data-testid="stHeader"] * {
+        color: #ffffff !important;
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
     }
     
     /* Text Area 樣式優化 */
