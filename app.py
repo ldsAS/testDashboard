@@ -233,7 +233,7 @@ st.markdown("""
         display: none;
     }
     [data-testid="stHeader"] {
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0,0,0,0.9);
     }
     
     /* Text Area 樣式優化 */
