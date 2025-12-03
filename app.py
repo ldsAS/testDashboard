@@ -242,9 +242,25 @@ st.markdown("""
         color: white !important;
     }
     
-    /* 修正：讓 SVG 圖示顏色跟隨文字 (解決灰色問題，避免變成方塊) */
+    /* 修正：讓 SVG 圖示顏色跟隨文字 */
     [data-testid="stHeader"] svg {
         fill: currentColor !important;
+    }
+
+    /* 新增：修正下拉選單 (Three dots menu) 的配色 */
+    ul[data-testid="main-menu-list"] {
+        background-color: #262730 !important;
+        border: 1px solid #464b5d;
+    }
+    ul[data-testid="main-menu-list"] li {
+        color: white !important;
+        background-color: transparent !important;
+    }
+    ul[data-testid="main-menu-list"] li span {
+        color: white !important;
+    }
+    ul[data-testid="main-menu-list"] li:hover {
+        background-color: #40424a !important;
     }
     
     /* Text Area 樣式優化 */
