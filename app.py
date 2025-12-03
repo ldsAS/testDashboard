@@ -235,6 +235,13 @@ st.markdown("""
     [data-testid="stHeader"] {
         background-color: rgba(0,0,0,0.9);
     }
+    [data-testid="stHeader"] button {
+        color: white !important;
+    }
+    [data-testid="stHeader"] svg {
+        fill: white !important;
+        stroke: white !important;
+    }
     
     /* Text Area 樣式優化 */
     .stTextArea textarea {
